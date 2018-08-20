@@ -1,0 +1,28 @@
+public class Dog { //if extends Animal is used Dog class inherits from Animal Class
+  int age; 
+  
+	public Dog(int dogsAge) { // constructor with parameter
+    age = dogsAge;
+  }
+	
+  public void bark() { //method without return 
+    System.out.println("Woof!");
+  }
+	
+  public void run(int feet) { // method with parameter
+    System.out.println("Your dog ran " + feet + " feet!");
+  }
+
+  public int getAge() { // method with return
+    return age;
+  }
+	public static void main(String[] args) {
+		Dog spike = new Dog(6); // initializing object called spike
+    // instance of class is called object
+    spike.bark();
+    spike.run(300);
+    int spikeAge = spike.getAge();
+    System.out.println(spikeAge);
+    }
+
+}
